@@ -1,0 +1,151 @@
+.app-container {
+  font-family: sans-serif;
+  padding: 1rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  max-width: 300px;
+  margin-inline: auto;
+  text-align: left;
+}
+
+.pending-throws {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.throw-box {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-weight: bold;
+  color: white;
+  border-radius: 0.5rem;
+}
+
+.throw-box.green {
+  background-color: #4caf50;
+}
+.throw-box.red {
+  background-color: #f44336;
+}
+.throw-box.gray {
+  background-color: #ccc;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem; /* Reduced gap */
+  margin-bottom: 1rem;
+  flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+.button-group button {
+  flex: 1 1 0; /* Allows buttons to shrink if needed */
+  padding: 1rem 1rem; /* Reduced padding */
+  font-size: 1rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  min-width: 70px; /* Prevents too-small buttons */
+}
+
+.button-group button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.button-group button:nth-child(1) {
+  background-color: #f44336;
+}
+.button-group button:nth-child(2) {
+  background-color: #4caf50;
+}
+.button-group button:nth-child(3) {
+  background-color: #2196f3;
+}
+
+.undo-group button {
+  flex: none;
+  padding: 0.9rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  background-color: #607d8b;
+  min-width: 70px;
+}
+
+.undo-group button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.stats-table,
+.log-table {
+  width: 100%;
+  max-width: 500px;
+  margin: 1rem auto;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.stats-table th,
+.stats-table td,
+.log-table th,
+.log-table td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+}
+
+.stats-table th,
+.log-table th {
+  background-color: #eee;
+}
+
+.hit-text {
+  color: #4caf50; /* green */
+  font-weight: bold;
+}
+
+.miss-text {
+  color: #f44336; /* red */
+  font-weight: bold;
+}
+
+.print-button {
+  background-color: #e4e264;
+  color: rgb(15, 15, 15);
+  border: none;
+  border-radius: 1rem;
+  padding: 0.5rem 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.print-button:hover {
+  background-color: #e9c93c;
+}
